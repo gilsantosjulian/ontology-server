@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/html-ontology#"
+     xml:base="http://www.semanticweb.org/html-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:www="http://www.semanticweb.org/"
+     xmlns:elements="http://www.semanticweb.org/html-ontology/elements#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:html-ontology="http://www.semanticweb.org/html-ontology#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/html-ontology">
+        <dc:title>HTML Ontology</dc:title>
+        <dc:description>Ontología que define los elementos HTML como componentes Web</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#alt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#alt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#img"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#aria-describedby -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#aria-describedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#aria-label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#aria-label">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#nav"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#hrefLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#hrefLink">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#a"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#html -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#html"/>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#nameElement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#nameElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#placeholder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#placeholder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#src -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#src">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#img"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#a"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#valueElement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology#valueElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#aria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aria-controls -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#aria-controls">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aria-expanded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#aria-expanded">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#ul"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aria-haspopup -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#aria-haspopup">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#li"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aria-hidden -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#aria-hidden">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#li"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aria-labelledby -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#aria-labelledby">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#form"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#class -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#class">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#general"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#dublin-core"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#dublin-core -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#dublin-core"/>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#general -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#general"/>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#general"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#rel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#rel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#role -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#role">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#aria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#dublin-core"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/html-ontology/elements#type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology#html"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#dublin-core"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#li"/>
+        <rdfs:comment>Define un hiperenlace, el cual es usado para enlazar una página a otra</rdfs:comment>
+        <rdfs:comment>Hiperenlace</rdfs:comment>
+        <rdfs:label>a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#article">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#main"/>
+        <rdfs:comment>Artículo</rdfs:comment>
+        <rdfs:comment>La etiqueta article especifíca contenido independiente y autocontenido</rdfs:comment>
+        <rdfs:label>article</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#aside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#aside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:comment>Aparte</rdfs:comment>
+        <rdfs:comment>La etiqueta aside define un contenido aparte del contenido en que se encuentra</rdfs:comment>
+        <rdfs:label>aside</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#element">
+        <rdfs:comment>Un elemento HTML usualmente consiste de un tag inicial y un tag final, con un contenido insertado en medio</rdfs:comment>
+        <rdfs:label>element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#footer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#footer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:comment>Define el pie de página de un documento o una sección</rdfs:comment>
+        <rdfs:comment>Pie de página</rdfs:comment>
+        <rdfs:label>footer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#form -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#form">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#main"/>
+        <rdfs:comment>Es usado para crear un formulario HTML para una entrada de usuario</rdfs:comment>
+        <rdfs:comment>Formulario</rdfs:comment>
+        <rdfs:label>form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#header -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#header">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:comment>Representa el contenedor como contenido introductorio o como un conjunto de enlaces de navegación</rdfs:comment>
+        <rdfs:id xml:lang="es"></rdfs:id>
+        <rdfs:label>header</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#img -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#img">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#main"/>
+        <rdfs:comment>Imágen</rdfs:comment>
+        <rdfs:comment>La etiqueta img define una imágen en un documento HTML</rdfs:comment>
+        <rdfs:label>img</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#form"/>
+        <rdfs:comment>Entrada de texto</rdfs:comment>
+        <rdfs:comment>La etiqueta input especifica un campo de entrada donde el usuario puede ingresar información</rdfs:comment>
+        <rdfs:label>input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#li -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#li">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#ol"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#ul"/>
+        <rdfs:comment>Define el conjunto de enlaces de navegación</rdfs:comment>
+        <rdfs:comment>Define un ítem de lista</rdfs:comment>
+        <rdfs:label>li</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#main -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#main">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:comment>La etiqueta main especifica el contenido principal de un documento</rdfs:comment>
+        <rdfs:comment>Sección principal</rdfs:comment>
+        <rdfs:label>main</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#nav -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#nav">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#element"/>
+        <rdfs:comment>Barra de navegación</rdfs:comment>
+        <rdfs:comment>Define el conjunto de enlaces de navegación</rdfs:comment>
+        <rdfs:label>nav</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#ol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#ol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#nav"/>
+        <rdfs:comment>Define una lista ordenada. Puede ser numérica o alfabética</rdfs:comment>
+        <rdfs:comment>Lista ordenada</rdfs:comment>
+        <rdfs:label>ol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#ul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/html-ontology/elements#ul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/html-ontology/elements#nav"/>
+        <rdfs:comment>Define una lista desordenada con viñetas</rdfs:comment>
+        <rdfs:comment>Lista desordenada</rdfs:comment>
+        <rdfs:label>ul</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#Button -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology#Button">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <aria-describedby>label_button</aria-describedby>
+        <elements:class>input</elements:class>
+        <elements:id>button</elements:id>
+        <elements:type>submit</elements:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology#Img -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology#Img">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#img"/>
+        <alt></alt>
+        <elements:class>img</elements:class>
+        <elements:id>img</elements:id>
+        <elements:role>presentation</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#a"/>
+        <hrefLink></hrefLink>
+        <title></title>
+        <elements:class>a</elements:class>
+        <elements:id>a</elements:id>
+        <elements:rel>nofollow</elements:rel>
+        <elements:role></elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Article -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Article">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#article"/>
+        <elements:class>article</elements:class>
+        <elements:id>article</elements:id>
+        <elements:role>article</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Aside -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Aside">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#aside"/>
+        <elements:class>aside</elements:class>
+        <elements:id>aside</elements:id>
+        <elements:role>complementary</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Footer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Footer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#footer"/>
+        <elements:class>footer</elements:class>
+        <elements:id>footer</elements:id>
+        <elements:role>contentinfo</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Form -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Form">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#form"/>
+        <elements:aria-labelledby>form_label</elements:aria-labelledby>
+        <elements:class>form</elements:class>
+        <elements:id>form</elements:id>
+        <elements:role>search</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Header -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Header">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#header"/>
+        <elements:class>header</elements:class>
+        <elements:id>header</elements:id>
+        <elements:role>banner</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Input -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Input">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#input"/>
+        <nameElement>Campo de entrada</nameElement>
+        <placeholder>Consulta de búsqueda</placeholder>
+        <elements:class>input</elements:class>
+        <elements:id>input</elements:id>
+        <elements:type>search</elements:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Li -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Li">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#li"/>
+        <elements:aria-haspopup rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</elements:aria-haspopup>
+        <elements:aria-hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</elements:aria-hidden>
+        <elements:class>li</elements:class>
+        <elements:id>li</elements:id>
+        <elements:role>menuitem</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Main -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Main">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#main"/>
+        <elements:class>main</elements:class>
+        <elements:id>main</elements:id>
+        <elements:role>main</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Nav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Nav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#nav"/>
+        <aria-label>Menú principal</aria-label>
+        <elements:class>nav</elements:class>
+        <elements:id>nav</elements:id>
+        <elements:role>navigation</elements:role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Ol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Ol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#ol"/>
+        <elements:class>ol</elements:class>
+        <elements:id>ol</elements:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/html-ontology/elements#Ul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/html-ontology/elements#Ul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/html-ontology/elements#ul"/>
+        <aria-label>Lista de ítems</aria-label>
+        <elements:aria-expanded rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</elements:aria-expanded>
+        <elements:aria-hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</elements:aria-hidden>
+        <elements:class>ul</elements:class>
+        <elements:id>ul</elements:id>
+        <elements:role>menubar</elements:role>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
