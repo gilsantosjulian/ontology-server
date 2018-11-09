@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1540327378955" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza-ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540327378955" name="http://www.eclipse.org/higgins/ontologies/2008/person" uri="person-ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540327378955" name="http://www.semanticweb.org/html-ontology" uri="html-ontology-organizada.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540327378955" name="http://www.semanticweb.org/juli/ontologies/2018/2/html-ontology" uri="html-ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1541084818591" name="http://www.semanticweb.org/html-ontology" uri="html-ontology.xml"/>
     </group>
 </catalog>

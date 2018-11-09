@@ -4,7 +4,7 @@ var path = require('path');
 
 /* GET ontologies listing. */
 router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname, '../public/ontologies', 'html-ontology-organizada.xml'));
+    res.sendFile(path.join(__dirname, '../public/ontologies', 'html-ontology.xml'));
 });
 
 module.exports = router;
